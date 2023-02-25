@@ -15,7 +15,9 @@
     "test": "jest -i",
     "test:coverage": "jest -i --coverage",
     "test:watch": "jest -i --watch",
-    "test:ci": "jest -i --ci"
+    "test:ci": "jest -i --ci",
+    "db:up": "docker compose up --detach db",
+    "db:bash": "docker exec -it typestacknodejsdb bash"
   },
   "repository": {
     "type": "git",
