@@ -4,7 +4,6 @@
   "description": "Solid decorator-based node.js architecture",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky install",
     "commit": "cz",
     "lint": "eslint . --ext .js,.ts --max-warnings=0",
@@ -12,7 +11,11 @@
     "start": "node app.js",
     "server:dev": "cross-env NODE_ENV=development nodemon",
     "server:test": "cross-env NODE_ENV=test nodemon",
-    "server:prod": "cross-env NODE_ENV=production nodemon"
+    "server:prod": "cross-env NODE_ENV=production nodemon",
+    "test": "jest -i",
+    "test:coverage": "jest -i --coverage",
+    "test:watch": "jest -i --watch",
+    "test:ci": "jest -i --ci"
   },
   "repository": {
     "type": "git",
