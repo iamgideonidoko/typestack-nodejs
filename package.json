@@ -24,5 +24,9 @@
     "commitizen": "^4.3.0",
     "cz-conventional-changelog": "^3.3.0",
     "husky": "^8.0.3"
+  },
+  "engines": {
+    "npm": "please-use-yarn",
+    "yarn": ">= 1.19.1"
   }
 }
